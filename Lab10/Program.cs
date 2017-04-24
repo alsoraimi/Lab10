@@ -10,6 +10,9 @@ namespace Lab10
     {
         static void Main(string[] args)
         {
+            Movies[] MoviesArray = new Movies[10];
+
+
         }
     }
 }
