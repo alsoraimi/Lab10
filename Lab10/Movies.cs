@@ -36,5 +36,18 @@ namespace Lab10
             }
         }
 
+        public Movies ()
+        {
+            Title = "";
+            Category = "";
+            
+        }
+        public Movies (string TitleInput, string CategoryInput)
+        {
+            Title = TitleInput;
+            Category = CategoryInput;
+
+        }
+
     }
 }
