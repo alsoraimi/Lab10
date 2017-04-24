@@ -27,11 +27,16 @@ namespace Lab10
             MovieList[8]= new Movies ("Happy Gilmore", "Comedy");
             MovieList[9]= new Movies ("Super Troopers", "Comedy");
 
-            Console.WriteLine("Please enter a Category from this list: Scifi, Horror, Drama, Animated, Comedy");
-            string input = Console.ReadLine().ToUpper();
+            Console.WriteLine("Please enter a Category from this list: SciFi, Horror, Drama, Animated, Comedy");
+
+            string input;
+            input = Validation.GetValidCategory();
+
+
             foreach (Movies item in MovieList)   // foreach loop to go through each movie in movie list
             {
-                if (input == item.GCategory)    //if statement for which category they picked
+                
+                if (input ==item.GCategory)    //if statement for which category they picked
                 {
                     Console.WriteLine($"{item.GTitle}");  // prints out the movies of certain category
                 }
