@@ -12,18 +12,18 @@ namespace Lab10
         public static string GetValidCategory()
         {
             string input;
-            
+            input = Console.ReadLine().ToLower();
 
             while (true)
 
             {
-                input = Console.ReadLine().ToLower();
+                
 
-                if (input != "scifi" || input != "horror" || input != "comedy" || input != "drama" || input != "animated")
+                if (input != "scifi" && input != "horror" && input != "comedy" && input != "drama" && input != "animated")
             {
                     Console.WriteLine("ERROR, Please enter SciFi, Horror, Comedy, Drama, or Animated");
-
-                      
+input = Console.ReadLine().ToLower();
+                    continue;   
             }
 
                 break;

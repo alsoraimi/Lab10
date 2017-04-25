@@ -36,7 +36,7 @@ namespace Lab10
             foreach (Movies item in MovieList)   // foreach loop to go through each movie in movie list
             {
                 
-                if (input ==item.GCategory)    //if statement for which category they picked
+                if (input.ToLower() ==item.GCategory.ToLower())    //if statement for which category they picked
                 {
                     Console.WriteLine($"{item.GTitle}");  // prints out the movies of certain category
                 }
